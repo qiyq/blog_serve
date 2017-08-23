@@ -1,0 +1,29 @@
+{
+  "name": "blog_serve",
+  "version": "1.0.0",
+  "description": "my blog",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiyq/blog_serve.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "qiyq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qiyq/blog_serve/issues"
+  },
+  "homepage": "https://github.com/qiyq/blog_serve#readme"
+}
