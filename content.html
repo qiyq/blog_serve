@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天上的神明与星辰，人间的艺术和真纯，我们所敬畏和热爱的，莫过于此。</title>
+    <!-- Global stylesheets -->
+    <!-- Global stylesheets -->
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/simditor-2.3.6/styles/simditor.css">
+    <link rel="stylesheet" href="js/simditor-html-master/styles/simditor-html.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+
+<!-- Content area -->
+<div class="content">
+    <!-- /border options title -->
+
+    <!-- Horizontal borders -->
+    <div class="panel panel-flat">
+        <div class="panel-heading">
+            <div class="heading-elements ">
+                <div class="btn-group dropup ">
+                    <button type="button" class="btn create bg-teal-400 btn-labeled " data-toggle="modal"
+                            data-target="#myModal"><b><i class="fa fa-heartbeat"></i></b> 新建文章
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="table-responsive tab_div">
+            <div class="tipDiv">
+            </div>
+
+            <form class="col-md-12 form-horizontal">
+                <div class="form-group col-md-4">
+                    <label for="artname" class="control-label col-md-3">文章名称:</label>
+
+                    <div class="col-md-7">
+                        <input type="text" class="form-control " id="artname">
+                    </div>
+
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="arttype" class="control-label col-md-3">文章类型:</label>
+
+                    <div class="col-md-7">
+                        <select
+                                class="form-control " id="arttype">
+                            <option value="">请选择</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn-primary btn btn-labeled search"><b><i class="fa fa-search"></i></b>
+                        查找
+                    </button>
+                </div>
+            </form>
+            <div class="table-content">
+                <table class="table table_list table-bordered table-striped table-hover text-center">
+                    <thead>
+                    <tr class="bg-blue">
+                        <th width="100px">序号</th>
+                        <th width="140px">文章类型</th>
+                        <th width="140px">发表时间</th>
+                        <th>文章名字</th>
+                        <th width="260px">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">新建文章</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="art">
+                        <div class="form-group">
+                            <label for="art_name" class="control-label">文章名称:</label>
+                            <input type="text" class="form-control artname" id="art_name" name="artname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="art_type" class="control-label">文章类型:</label>
+                            <select required name="arttype"
+                                    class="form-control arttype" id="art_type">
+                                <option value="1">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="editor-full" class="control-label">文章内容:</label>
+                            <textarea
+                                    class="form-control" name="artcontent" id="editor-full" rows="4"
+                                    cols="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary contentSave">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- Core JS files -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap_select.min.js"></script>
+<!-- /core JS files -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/simditor-2.3.6/scripts/module.min.js"></script>
+<script src="js/simditor-2.3.6/scripts/hotkeys.min.js"></script>
+<script src="js/simditor-2.3.6/scripts/uploader.min.js"></script>
+<script src="js/simditor-2.3.6/scripts/simditor.min.js"></script>
+<script src="js/simditor-html-master/lib/bea.js"></script>
+<script src="js/simditor-html-master/lib/simditor-html.js"></script>
+<script src="js/bootpag.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!-- /theme JS files -->
+
+</html>
